@@ -1,0 +1,73 @@
+/* UploadAndQuestion.css */
+
+.upload-question-container {
+  min-height: auto; /* no forced full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3vh;       /* shift entire box down by 11vh */
+  background-color: #f4f6f8;
+  box-sizing: border-box;
+  /* optional max-width and margin auto if you want horizontally centered container */
+  width: 100%;
+}
+
+.upload-question-paper {
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upload-question-title {
+  font-weight: 600;
+  color: #1976d2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.upload-button {
+  margin-bottom: 1rem;
+  background-color: #1976d2;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.upload-button:hover {
+  background-color: #125ea2;
+}
+
+.upload-selected-file {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1rem;
+  word-break: break-word;
+}
+
+.upload-textfield {
+  margin-bottom: 1rem;
+  background-color: #fafafa;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .upload-question-paper {
+    padding: 1.5rem;
+  }
+
+  .upload-question-title {
+    font-size: 1.5rem;
+  }
+
+  .upload-button {
+    font-size: 0.9rem;
+  }
+
+  .upload-textfield {
+    font-size: 0.9rem;
+  }
+}
